@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Money Quest: Pixel RPG</title>
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <!-- Pixel font -->
+  <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap" rel="stylesheet">
+  <!-- FontAwesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <!-- Anime.js for animations -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+  <!-- Howler.js for sounds -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.2.3/howler.min.js"></script>
+  <!-- Tingle.js (modal) -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/tingle.js@0.16.0/dist/tingle.min.css" />
+  <script src="https://cdn.jsdelivr.net/npm/tingle.js@0.16.0/dist/tingle.min.js"></script>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div id="game-container">
+    <header>
+      <h1><i class="fa-solid fa-coins"></i> Money Quest <span class="pixel">RPG</span></h1>
+      <button id="settings-btn" title="Settings"><i class="fa-solid fa-gear"></i></button>
+    </header>
+    <main>
+      <section id="hero-section">
+        <div id="hero-avatar">
+          <!-- SVG Knight will be injected here -->
+        </div>
+        <div class="hero-meta">
+          <div id="hero-name"></div>
+          <div class="hero-info">
+            <div>LVL <span id="hero-level">1</span></div>
+            <div>XP <span id="hero-xp">0</span>/<span id="hero-xpmax">10</span></div>
+          </div>
+        </div>
+      </section>
+      <section id="money-section">
+        <div id="money-amount"><i class="fa-solid fa-coins"></i> <span id="money-val">0</span></div>
+        <button id="collect-btn"><span id="collect-coin"><i class="fa-solid fa-hand-pointer"></i></span> Collect coin!</button>
+      </section>
+      <section id="upgrade-section">
+        <h3>Upgrades</h3>
+        <div class="upgrade-list" id="upgrade-list"></div>
+      </section>
+    </main>
+    <footer>
+      <span class="footer-credit">Pixel Art: SVG Knight, Sounds: <a href="https://pixabay.com/music/search/retro/" target="_blank">Pixabay</a></span>
+    </footer>
+  </div>
+
+  <!-- Settings modal -->
+  <div id="settings-modal-bg" class="modal-bg hidden">
+    <div class="modal">
+      <h2>Game settings</h2>
+      <div class="settings-list">
+        <label>
+          <input type="checkbox" id="darkmode-toggle">
+          Dark mode
+        </label>
+        <label>
+          <input type="checkbox" id="music-toggle">
+          Background music
+        </label>
+        <label>
+          <input type="checkbox" id="sfx-toggle">
+          Sound effects
+        </label>
+      </div>
+      <button id="reset-game-btn" class="danger"><i class="fa-solid fa-rotate-left"></i> Reset game</button>
+      <button id="close-settings-btn">Close</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
