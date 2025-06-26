@@ -74,6 +74,14 @@ Everything is saved locally in your browser, so you can play at any time!
 
 ---
 
+## 📱 Mobile Version Notice
+
+> **Mobile support is under active development and will be improved soon!**  
+> Currently, you may experience layout or usability issues on some mobile devices.  
+> Thank you for your patience while we work to enhance the experience on phones and tablets.
+
+---
+
 ## 🔮 Customization & Expansion Ideas
 
 The game is designed to be extensible!  
