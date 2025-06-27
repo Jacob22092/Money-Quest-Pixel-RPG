@@ -3,6 +3,8 @@
 A browser-based idle/clicker RPG game featuring quests, upgrades, random events, talents, and collectible pet companions.  
 Everything is saved locally in your browser, so you can play at any time!
 
+![Pixel RPG Character Gane](https://i.imgur.com/8Fgv0xl.png)
+
 ---
 
 ## 🚀 Features & Systems
